@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { TilesComponent } from './tiles/tiles.component';
-import { EquirectComponent } from './equirect/equirect.component';
-import { TransitionComponent } from './transition/transition.component'
+import { TransitionComponent } from './transition/transition.component';
+// import { FieldComponent } from './field/field.component';
+// import { GolfComponent } from './golf/golf.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TilesComponent,
-    EquirectComponent,
-    TransitionComponent
+    TransitionComponent,
+    // FieldComponent,
+    // GolfComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: EquirectComponent },
-      { path: 'transition', component: TransitionComponent },
-      { path: 'equirect', component: EquirectComponent },
-      { path: 'tiles', component: TilesComponent },
+      { path: '', component: TransitionComponent },
+      // { path: 'transition', component: TransitionComponent },
+      // { path: 'field', component: FieldComponent },
+      // { path: 'golf', component: GolfComponent },
     ])
   ],
   providers: [],
